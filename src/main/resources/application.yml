@@ -1,17 +1,17 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/jpashop
+    url: jdbc:mysql://localhost:3306/test
     username: sa
-    password:
-    driver-class-name: org.h2.Driver
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
-    hibernate:
-      ddl-auto: create
     properties:
       hibernate:
         show_sql: true
         format_sql: true
+    hibernate:
+      ddl-auto: none
 
 logging:
   level:
